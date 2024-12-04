@@ -1,0 +1,76 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+header {
+    margin-top: 0;
+    width: 100%;
+    height: 6em;
+    position: fixed;
+    text-align: center;
+    background: red;
+}
+
+.contenedor {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contRecetas {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+    border: 1px solid grey;
+}
+
+nav {
+    width: 100%;
+    margin-bottom: 0.6em;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    width: 33%;
+    text-align: center;
+}
+
+img {
+    width: 90%;
+}
+
+h1 {
+    margin: 0.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p {
+    padding: 0.6em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    padding-bottom: 0.6rem;
+}
+*/
