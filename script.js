@@ -1,80 +1,30 @@
-/* <script>
-    document.querySelector('#btnDobles').addEventListener('click', () => {
-    console.log('PULSADO')
-    document.querySelectorAll('.roomDoble').forEach((room) => {
-        room.style.backgroundColor = 'lightgreen';
-    });
-});
+/*
+let xCoche1 = 0;
+let xCoche2 = 0;
 
-document.querySelector('#btnSingles').addEventListener('click', () => {
-    console.log('PULSADO SINGLE')
-    document.querySelectorAll('.roomSingle').forEach((room) => {
-        room.style.backgroundColor = 'lightblue';
-    });
+document.querySelector("body").addEventListener("keydown",(event) => {
+    if (event.code == 'KeyP') {
+        xCoche1 = xCoche1 + 15;
+        document.querySelector("#coche1").style.marginLeft = xCoche1 + "px";
+    } else if (event.code == "KeyQ") {
+        xCoche2 = xCoche2 + 15;
+        document.querySelector("#coche2").style.marginLeft = xCoche2 + "px";
+    }
 });
-
-</script>
-<!-- <script>
-    document.querySelector('#btnDoble).addEventListener('click', ()=> {
-        console.log('PULSADO')
-        document.querySelectorAll('.roomDoble).forEach((room)=>{
-            room.style.backgroundColor = 'fuchsia';
-        });
-    });
-</script> 
-
-function ocultarPeliculas() {
-    //1. Hacer desaparecer todas las películas
-    document.querySelectorAll(".pelicula").forEach((pelicula) => {
-        pelicula.style.display = "None";
-    });
-}
-
-document.querySelector("#boton-drama").addEventListener("click", () => {
-    //1. Hacer desaparecer todas las películas
-    ocultarPeliculas();
-    //2. Mostrar la seleccionada
-    document.querySelectorAll(".drama").forEach((pelicula) => {
-        pelicula.style.display = "Block";
-    });
-});
-document.querySelector("#boton-terror").addEventListener("click", () => {
-    //1. Hacer desaparecer todas las películas
-    ocultarPeliculas();
-    //2. Mostrar la seleccionada
-    document.querySelectorAll(".terror").forEach((pelicula) => {
-        pelicula.style.display = "Block";
-    });
-});
-document.querySelector("#boton-comedia").addEventListener("click", () => {
-    //1. Hacer desaparecer todas las películas
-    ocultarPeliculas();
-    //2. Mostrar la seleccionada
-    document.querySelectorAll(".comedia").forEach((pelicula) => {
-        pelicula.style.display = "Block";
-    });
-});
-document.querySelector("#boton-todas").addEventListener("click", () => {
-    document.querySelectorAll(".pelicula").forEach((pelicula) => {
-        pelicula.style.display = "Block";
-    });
-});
-
-
 */
 
-function ocultarPeliculas() {
-    //1. Hacer desaparecer todas las películas
-    document.querySelectorAll(".pelicula").forEach((pelicula) => {
-        pelicula.style.display = "None";
-    });
-}
+let xCoche1 = 0;
+let xCoche2 = 0;
 
-document.querySelector("#boton-drama").addEventListener("click", () => {
-    //1. Hacer desaparecer todas las películas
-    ocultarPeliculas();
-    //2. Mostrar la seleccionada
-    document.querySelectorAll(".drama").forEach((pelicula) => {
-        pelicula.style.display = "Block";
-    });
+document.querySelector("body").addEventListener("keydown", (event) => {
+    if (event.code == 'KeyP') {
+        xCoche1 = xCoche1 + 15;
+        // Usamos 'style' en vez de 'computedStyleMap'
+        document.querySelector("#coche1").style.marginLeft = xCoche1 + "px";
+    } else if (event.code == "KeyQ") {
+        xCoche2 = xCoche2 + 15;
+        // Igualmente, usamos 'style' para modificar la propiedad CSS
+        document.querySelector("#coche2").style.marginLeft = xCoche2 + "px";
+    }
 });
+
